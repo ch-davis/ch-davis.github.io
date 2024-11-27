@@ -19,8 +19,14 @@ star: true
 # 个人偏好将非干货或随想短文的 order 设置在 -0.01 到 -0.99，将干货类长文的 order 设置在 -1 到负无穷。每次新增文章都会在上一篇的基础上递减 order 值。
 order: -1
 ---
+  > [!tip]
+> 超微主板可以通过命令来设置风扇模式和速度，前提是再服务器安装 `ipmitool` 工具
 
-通过IPMI命令行设置风扇模式
+```
+apt-get update&apt install ipmitool
+```
+
+## 通过IPMI命令行设置风扇模式
 可以通过IPMI命令行工具来设置这些模式。以下是设置命令的通用格式
 ```shell
 ipmitool -H IPMI_IP -U USERNAME -P PASSWORD raw 0x30 0x45 0x01 MODE_HEX
