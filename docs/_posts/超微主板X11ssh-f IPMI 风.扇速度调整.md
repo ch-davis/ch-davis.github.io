@@ -4,6 +4,7 @@ title: 超微主板X11ssh-f IPMI 风扇速度调整
 # 设置写作时间
 date: 2024-11-28
 # 一个页面可以有多个分类
+bgImage: https://img.newzone.top/home-bg-1.jpg
 category:
   - 使用指南
 # 一个页面可以有多个标签
@@ -20,7 +21,7 @@ order: -1
 bgImage: https://img.newzone.top/home-bg-1.jpg
 ---
 
-## 通过IPMI命令行设置风扇模式
+通过IPMI命令行设置风扇模式
 可以通过IPMI命令行工具来设置这些模式。以下是设置命令的通用格式
 ```shell
 ipmitool -H IPMI_IP -U USERNAME -P PASSWORD raw 0x30 0x45 0x01 MODE_HEX
@@ -52,4 +53,3 @@ ipmitool -H 192.168.31.252 -U ADMIN -P ADMIN raw 0x30 0x70 0x66 0x01 0x00 0x24
     - U 和-P 分别指定 IPMI 的用户名和密码
    - 0x24 是 16 进制的，0x24 代表风扇转速设置成 36%
  以上
-
