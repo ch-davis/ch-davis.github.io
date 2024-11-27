@@ -4,7 +4,7 @@
   <title>LearnData 开源笔记</title>
   <subtitle>开源工具、效率方法、心理学探索的自我提升笔记，记录并输出一切能让自己提升的知识。</subtitle>
   <icon>https://newzone.top/favicon.ico</icon>
-  <updated>2024-11-27T19:50:37.715Z</updated>
+  <updated>2024-11-27T19:59:10.127Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://newzone.top/atom.xml"/>
   <link rel="alternate" href="https://newzone.top/"/>
@@ -14,13 +14,13 @@
     <title type="text">超微主板X11ssh-f IPMI 风扇速度调整</title>
     <id>https://newzone.top/posts/%E8%B6%85%E5%BE%AE%E4%B8%BB%E6%9D%BFX11ssh-f%20IPMI%20%E9%A3%8E.%E6%89%87%E9%80%9F%E5%BA%A6%E8%B0%83%E6%95%B4.html</id>
     <link href="https://newzone.top/posts/%E8%B6%85%E5%BE%AE%E4%B8%BB%E6%9D%BFX11ssh-f%20IPMI%20%E9%A3%8E.%E6%89%87%E9%80%9F%E5%BA%A6%E8%B0%83%E6%95%B4.html"/>
-    <updated>2024-11-27T19:49:22.000Z</updated>
-    <summary type="html"><![CDATA[<h2>通过IPMI命令行设置风扇模式</h2>
-<p>可以通过IPMI命令行工具来设置这些模式。以下是设置命令的通用格式</p>
+    <updated>2024-11-27T19:58:01.000Z</updated>
+    <summary type="html"><![CDATA[<p>通过IPMI命令行设置风扇模式
+可以通过IPMI命令行工具来设置这些模式。以下是设置命令的通用格式</p>
 <div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" data-title="shell" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">ipmitool</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -H</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> IPMI_IP</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -U</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> USERNAME</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -P</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> PASSWORD</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> raw</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 0x30</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 0x45</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 0x01</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> MODE_HEX</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div>]]></summary>
-    <content type="html"><![CDATA[<h2>通过IPMI命令行设置风扇模式</h2>
-<p>可以通过IPMI命令行工具来设置这些模式。以下是设置命令的通用格式</p>
+    <content type="html"><![CDATA[<p>通过IPMI命令行设置风扇模式
+可以通过IPMI命令行工具来设置这些模式。以下是设置命令的通用格式</p>
 <div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" data-title="shell" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">ipmitool</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -H</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> IPMI_IP</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -U</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> USERNAME</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -P</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> PASSWORD</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> raw</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 0x30</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 0x45</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 0x01</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> MODE_HEX</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>其中，MODE_HEX 为相应模式的十六进制代码：</p>
 <div class="hint-container note">
