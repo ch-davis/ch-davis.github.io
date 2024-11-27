@@ -7,7 +7,8 @@ title: 网管丁小白
 #heroImage: /logo.svg
 heroText: 网管丁小白
 tagline: 学习中的网络白丁
-bgImage: https://img.newzone.top/home-bg-1.jpg
+# bgImage: https://img.newzone.top/home-bg-1.jpg
+bgImage: https://img.newzone.top/home-bg-1.jpg](https://i0.hippopx.com/photos/767/454/329/backlit-blogging-business-coding-preview.jpg
 heroFullScreen: false
 #projects:
 #  - icon: project
